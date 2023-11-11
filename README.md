@@ -4,7 +4,7 @@
 
 
 ## Link do site (`NEW!`)
-Acesse o site através deste link de hospedagem feita pelo próprio github -> [Folder Preview]()
+Acesse o site através deste link de hospedagem feita pelo próprio github -> [Folder Preview](https://gustavoborges13.github.io/AmazonasSite/2023-2/Site.html)
 
 ## Informações complementares
  Para mais informações dos modelos em 3D, as mesmas foram feitas no onshape disponivel em:
@@ -16,7 +16,7 @@ Acesse o site através deste link de hospedagem feita pelo próprio github -> [F
 CONTEÚDO ABAIXO FOI DESCONTINUADO. MOTIVO: LOGO ALTERADA
 ```
 ## Link do site (`Antigo - deprecated`)
-Acesse o site através deste link de hospedagem feita pelo próprio github -> [Folder Preview](https://gustavoborges13.github.io/AmazonasSite/Site.html)
+Acesse o site através deste link de hospedagem feita pelo próprio github -> [Folder Preview](https://gustavoborges13.github.io/AmazonasSite/2023-1/Site.html)
 
 ## Informações complementares
  Para mais informações dos modelos em 3D, as mesmas foram feitas no onshape disponivel em:
