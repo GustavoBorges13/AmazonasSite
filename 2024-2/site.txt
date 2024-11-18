@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria de Chaveiros 3D</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    body {
+      display: flex;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    /* Estilo do cabeçalho */
+    header {
+      width: 100%;
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      z-index: 10;
+    }
+
+    /* Estilo do menu lateral */
+    #menu {
+      width: 250px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      background-color: #333;
+      padding-top: 20px;
+      padding-right: 10px;
+    }
+
+    #menu a {
+      color: white;
+      display: block;
+      padding: 12px 20px;
+      text-decoration: none;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+.menu-lateral h2 {
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    line-height: 1.5;    /* Ajusta a altura da linha para mais espaçamento */
+}
+    #menu a:hover, #menu a.active {
+      background-color: #575757;
+    }
+
+    /* Estilo do conteúdo */
+    main {
+      margin-left: 250px;
+      padding: 20px;
+      overflow-y: auto;
+      flex: 1;
+      padding-top: 20px;
+    }
+
+    /* Estilo das seções */
+    section {
+      margin-bottom: 40px;
+    }
+
+    /* Títulos das seções */
+    .section-title {
+      padding: 10px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      margin-top: 20px;
+      font-size: 20px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .item {
+      width: 48%;
+    }
+
+    model-viewer {
+      width: 100%;
+      height: 400px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabeçalho com título -->
+  <header>
+    Galeria de Chaveiros 3D
+  </header>
+
+  <div id="menu">
+    <a href="#chaveiro-v1" class="menu-item">Chaveiro V1</a>
+    <a href="#chaveiro-v2" class="menu-item">Chaveiro V2</a>
+    <a href="#chaveiro-v3" class="menu-item">Chaveiro V3</a>
+    <a href="#chaveiro-v4" class="menu-item">Chaveiro V4</a>
+    <a href="#chaveiro-v5" class="menu-item">Chaveiro V5</a>
+    <a href="#chaveiro-v6" class="menu-item">Chaveiro V6</a>
+    <a href="#chaveiro-v7" class="menu-item">Chaveiro V7</a>
+    <a href="#chaveiro-v8" class="menu-item">Chaveiro V8</a>
+    <a href="#chaveiro-v9" class="menu-item">Chaveiro V9</a>
+  </div>
+
+  <main>
+    <!-- Título do Chaveiro V1 -->
+    <section id="chaveiro-v1" class="section-title">
+      <h2>Chaveiro V1 - igual a logo</h2>
+    </section>
+
+    <!-- Galeria de Modelos Chaveiro V1 -->
+    <section class="gallery">
+      <!-- Modelo 1 -->
+      <div class="item">
+        <h2>Chaveiro 1</h2>
+        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" 
+          alt="Modelo 3D Astronauta" 
+          auto-rotate camera-controls 
+          style="width: 100%; height: 500px;">
+        </model-viewer>
+      </div>
+
+      <!-- Modelo 2 -->
+      <div class="item">
+        <h2>Chaveiro 2</h2>
+        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" 
+          alt="Modelo 3D Astronauta" 
+          auto-rotate camera-controls 
+          style="width: 100%; height: 500px;">
+        </model-viewer>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Título do Chaveiro V2 -->
+    <section id="chaveiro-v2" class="section-title">
+      <h2>Chaveiro V2 - Novo Modelo</h2>
+    </section>
+
+    <!-- Galeria de Modelos Chaveiro V2 -->
+    <section class="gallery">
+      <!-- Modelo 3 -->
+      <div class="item">
+        <h2>Chaveiro 3</h2>
+        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" 
+          alt="Modelo 3D Astronauta" 
+          auto-rotate camera-controls 
+          style="width: 100%; height: 500px;">
+        </model-viewer>
+      </div>
+
+      <!-- Modelo 4 -->
+      <div class="item">
+        <h2>Chaveiro 4</h2>
+        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" 
+          alt="Modelo 3D Astronauta" 
+          auto-rotate camera-controls 
+          style="width: 100%; height: 500px;">
+        </model-viewer>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Título do Chaveiro V3 -->
+    <section id="chaveiro-v3" class="section-title">
+      <h2>Chaveiro V3 - Exemplo 1</h2>
+    </section>
+
+    <!-- Galeria de Modelos Chaveiro V3 -->
+    <section class="gallery">
+      <!-- Modelo 5 -->
+      <div class="item">
+        <h2>Chaveiro 5</h2>
+        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" 
+          alt="Modelo 3D Astronauta" 
+          auto-rotate camera-controls 
+          style="width: 100%; height: 500px;">
+        </model-viewer>
+      </div>
+
+      <!-- Modelo 6 -->
+      <div class="item">
+        <h2>Chaveiro 6</h2>
+        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" 
+          alt="Modelo 3D Astronauta" 
+          auto-rotate camera-controls 
+          style="width: 100%; height: 500px;">
+        </model-viewer>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Título do Chaveiro V4 -->
+    <section id="chaveiro-v4" class="section-title">
+      <h2>Chaveiro V4 - Exemplo 2</h2>
+    </section>
+
+    <!-- Galeria de Modelos Chaveiro V4 -->
+    <section class="gallery">
+      <!-- Modelo 7 -->
+      <div class="item">
+        <h2>Chaveiro 7</h2>
+        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" 
+          alt="Modelo 3D Astronauta" 
+          auto-rotate camera-controls 
+          style="width: 100%; height: 500px;">
+        </model-viewer>
+      </div>
+
+      <!-- Modelo 8 -->
+      <div class="item">
+        <h2>Chaveiro 8</h2>
+        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" 
+          alt="Modelo 3D Astronauta" 
+          auto-rotate camera-controls 
+          style="width: 100%; height: 500px;">
+        </model-viewer>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Título do Chaveiro V5 -->
+    <section id="chaveiro-v5" class="section-title">
+      <h2>Chaveiro V5 - Exemplo 3</h2>
+    </section>
+
+    <!-- Galeria de Modelos Chaveiro V5 -->
+    <section class="gallery">
+      <!-- Modelo 9 -->
+      <div class="item">
+        <h2>Chaveiro 9</h2>
+        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" 
+          alt="Modelo 3D Astronauta" 
+          auto-rotate camera-controls 
+          style="width: 100%; height: 500px;">
+        </model-viewer>
+      </div>
+
+      <!-- Modelo 10 -->
+      <div class="item">
+        <h2>Chaveiro 10</h2>
+        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" 
+          alt="Modelo 3D Astronauta" 
+          auto-rotate camera-controls 
+          style="width: 100%; height: 500px;">
+        </model-viewer>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Título do Chaveiro V6 -->
+    <section id="chaveiro-v6" class="section-title">
+      <h2>Chaveiro V6 - Exemplo 4</h2>
+    </section>
+
+    <!-- Galeria de Modelos Chaveiro V6 -->
+    <section class="gallery">
+      <!-- Modelo 11 -->
+      <div class="item">
+        <h2>Chaveiro 11</h2>
+        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" 
+          alt="Modelo 3D Astronauta" 
+          auto-rotate camera-controls 
+          style="width: 100%; height: 500px;">
+        </model-viewer>
+      </div>
+
+      <!-- Modelo 12 -->
+      <div class="item">
+        <h2>Chaveiro 12</h2>
+        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" 
+          alt="Modelo 3D Astronauta" 
+          auto-rotate camera-controls 
+          style="width: 100%; height: 500px;">
+        </model-viewer>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Título do Chaveiro V7 -->
+    <section id="chaveiro-v7" class="section-title">
+      <h2>Chaveiro V7 - Exemplo 5</h2>
+    </section>
+
+    <!-- Galeria de Modelos Chaveiro V7 -->
+    <section class="gallery">
+      <!-- Modelo 13 -->
+      <div class="item">
+        <h2>Chaveiro 13</h2>
+        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" 
+          alt="Modelo 3D Astronauta" 
+          auto-rotate camera-controls 
+          style="width: 100%; height: 500px;">
+        </model-viewer>
+      </div>
+
+      <!-- Modelo 14 -->
+      <div class="item">
+        <h2>Chaveiro 14</h2>
+        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" 
+          alt="Modelo 3D Astronauta" 
+          auto-rotate camera-controls 
+          style="width: 100%; height: 500px;">
+        </model-viewer>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Título do Chaveiro V8 -->
+    <section id="chaveiro-v8" class="section-title">
+      <h2>Chaveiro V8 - Exemplo 6</h2>
+    </section>
+
+    <!-- Galeria de Modelos Chaveiro V8 -->
+    <section class="gallery">
+      <!-- Modelo 15 -->
+      <div class="item">
+        <h2>Chaveiro 15</h2>
+        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" 
+          alt="Modelo 3D Astronauta" 
+          auto-rotate camera-controls 
+          style="width: 100%; height: 500px;">
+        </model-viewer>
+      </div>
+
+      <!-- Modelo 16 -->
+      <div class="item">
+        <h2>Chaveiro 16</h2>
+        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" 
+          alt="Modelo 3D Astronauta" 
+          auto-rotate camera-controls 
+          style="width: 100%; height: 500px;">
+        </model-viewer>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Título do Chaveiro V9 -->
+    <section id="chaveiro-v9" class="section-title">
+      <h2>Chaveiro V9 - Exemplo 7</h2>
+    </section>
+
+    <!-- Galeria de Modelos Chaveiro V9 -->
+    <section class="gallery">
+      <!-- Modelo 17 -->
+      <div class="item">
+        <h2>Chaveiro 17</h2>
+        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" 
+          alt="Modelo 3D Astronauta" 
+          auto-rotate camera-controls 
+          style="width: 100%; height: 500px;">
+        </model-viewer>
+      </div>
+
+      <!-- Modelo 18 -->
+      <div class="item">
+        <h2>Chaveiro 18</h2>
+        <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" 
+          alt="Modelo 3D Astronauta" 
+          auto-rotate camera-controls 
+          style="width: 100%; height: 500px;">
+        </model-viewer>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Rodapé -->
+    <footer style="background-color: #333; color: white; text-align: center; padding: 10px; margin-top: 20px;">
+      <p>Desenvolvido por <a href="https://github.com/gustavoborges13" style="color: #ddd;" target="_blank">Gustavo Borges</a></p>
+    </footer>
+  </main>
+</body>
+</html>

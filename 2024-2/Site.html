@@ -1,97 +1,226 @@
 <!DOCTYPE html>
-
-<!--Generated using aw_PreviewGenerator http://videohive.net/item/aw_previewgenerator/14081377 -->
-<html class="no-js" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Folders preview</title> 
-        <style>
-        html {font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;}
-body {font-family: Arial, Helvetica, sans-serif;padding: 0;margin: 0; background: #FFFFFF;}
-h2 {font-size: 32px; margin: 0 0 15px 2%; color: #4C4C4C;}
-p {font-size: 16px; font-weight: normal; line-height: 1.5; color: #797478; margin: 0 0 0 0; height: 20px;}
-img {max-width: 101%;}
-hr {display: block; -webkit-margin-before: 0.5em; -webkit-margin-after: 0.5em; -webkit-margin-start: auto; -webkit-margin-end: auto; border-style: inset; border: solid #dddddd; border-width: 1px 0 0;}
-	
-#sidebar{ z-index: 999; position: fixed;}
-.container { width: 65%; margin: 30px auto; overflow: hidden;}
-   #sidebar label { position: fixed; top: 10px; left: 20px; font-size: 38px; cursor: pointer;}#sidebar input#slide {display: none;}
-#sidebar input#slide:checked~label.open {color: #bdc3c7;}
-#sidebar #menu a span, #sidebar label {-webkit-transition: all .2s ease-in-out;-moz-transition: all .2s ease-in-out;-ms-transition: all .2s ease-in-out;-o-transition: all .2s ease-in-out;}
-#sidebar #menu {position: absolute;top: 100px;}
-#sidebar input#slide:checked~#menu a {left: 0;}
-#sidebar #menu a {display: block; position: relative; width: auto; left: -110%; text-decoration: none;	background-color: rgba(255, 255, 255, 0.16); clear: both; white-space: nowrap; -webkit-backface-visibility: hidden;    -webkit-transform: translate3d(0,0,0); -webkit-transition: left .4s cubic-bezier(.45,.25,.01,.92); -moz-transition: left .4s cubic-bezier(.45,.25,.01,.92);  -ms-transition: left .4s cubic-bezier(.45,.25,.01,.92);    -o-transition: left .4s cubic-bezier(.45,.25,.01,.92);}
-#sidebar #menu a div.icon { width: 40px;text-align: center;	background: #5485C9;color: #345E99;}
-#sidebar #menu a div.title { font-family: sans-serif; padding: 0 20px; color: #345E99;}
-#sidebar #menu a.active div.title, #sidebar #menu a div.title:hover { display: block; color: #ecf0f1; background: #5485C9;}
-#sidebar #menu a div.title, #sidebar #menu a div.icon {vertical-align: top; height: 45px; line-height: 45px; display: inline-block; font-size: 14px;}
-
-.large-12.columns{width: 96%; text-align: left;}
-.columns {width: 30.00%; margin:  2% 2% 2% 1%;float: left;text-align: center;}
-
-@media screen and (max-width: 1240px){.container {width: 80%; margin: 30px auto;}.columns {width:20%;}}
-@media screen and (max-width : 940px){.container {width: 85%; margin: 30px auto;}.columns {width:29.33333%;}}
-@media screen and (max-width : 720px){.container {width: 90%; margin: 20px auto;}.columns {width: 46%;}}
-@media screen and (max-width : 530px){.container {width: 95%; margin: 20px auto;}.columns {width: 96%;}}
-@media screen and (max-width : 320px){.container {width: 100%; margin: 10px auto;}.columns {width: 96%;}}
-
-</style>
-
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria de Chaveiros</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="menu">
+    <a href="#chaveiro-v1">Chaveiro V1</a>
+    <a href="#chaveiro-v2">Chaveiro V2</a>
+    <a href="#chaveiro-v3">Chaveiro V3</a>
+    <a href="#chaveiro-v4">Chaveiro V4</a>
+    <a href="#chaveiro-v5">Chaveiro V5</a>
+    <a href="#chaveiro-v6">Chaveiro V6</a>
+    <a href="#chaveiro-v7">Chaveiro V7</a>
+    <a href="#chaveiro-v8">Chaveiro V8</a>
+    <a href="#chaveiro-v9">Chaveiro V9</a>
+  </div>
 
-        <nav id="sidebar">
-                   <input id="slide" name="slide" type="checkbox" checked>
-                <label for="slide" class="icon open">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAZCAYAAADNAiUZAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIE1hY2ludG9zaCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoxQkJENUZCQUMyM0QxMUUyOTlFNEUyMTI3RkFFRDM2OCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoxQkJENUZCQkMyM0QxMUUyOTlFNEUyMTI3RkFFRDM2OCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjFCQkQ1RkI4QzIzRDExRTI5OUU0RTIxMjdGQUVEMzY4IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjFCQkQ1RkI5QzIzRDExRTI5OUU0RTIxMjdGQUVEMzY4Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+43ragwAAAK5JREFUeNpinDlzZgIDA0M/EAsw0B48AOJAJjpaCAIKIPuY6GghHIAs/TAQli6gs50LWYBEIRBPhIY3rcEFUMiyIKWqB/QMXoaBiFO6A1jwOtDJPlBOucACLRwK6OjRRiY6WwgC9gOWkB7Q2U5wPg2Exiu9ElIjC7SUcBz2+XRklUgGQJxPx1oGnJDmQy2mBwAVtwpMdLQQBgQGLCFtoLOd4FomEYgP0rHduwAgwADxQR2CJ/blIQAAAABJRU5ErkJggg==" alt="Show/Hide menu">
-            </label>
-            <div id="menu">
-                    <a href="#ExtrusaoSuperior">
-                    <div class="title">Com extrusao superior</div>
-                </a>
-                    <a href="#ExtrusaoSimetrica">
-                    <div class="title">Com extrusao simêtrica</div>
-                </a>
-                </div></nav>
-<div class="container">  
+  <main>
+    <!-- Título do Chaveiro V1 -->
+    <section id="chaveiro-v1" class="section-title">
+      <h2>Chaveiro V1 - Parcialmente igual a logo</h2>
+    </section>
 
-    
-            <div class="row">
-            <div class="large-12 columns">
-                 <div class="section" id="ExtrusaoSuperior">
-                    <h2>Com extrusão superior (STL Files)</h2> 
-                    <hr>
-                  </div>
-                </div> 
-            </div>
-            
-              <div class="row">
-                   <div class="large-4 columns">
-                        <a href="./ExtrusaoSuperior/Chaveiro 1 - Amazonas.stl" download>
-                            <img src="./ExtrusaoSuperior/Gifs/Chaveiro1.gif" alt="chaveiro1">
-                            <p align="center">Chaveiro 1 - Amazonas</p>
-                        </a>
-                    </div>
-              </div>
+    <!-- Galeria de Modelos Chaveiro V1 -->
+    <section class="gallery">
+      <!-- Modelo 1 -->
+      <div class="item">
+        <h2>Chaveiro 1 - foco nos cabelos e menos traços, as rugas são "furos" para mostrar profundidade (sombra)</h2>
+        <img src="./Gifs/Chaveiro V1 - Haley.gif" alt="GIF Chaveiro 1" style="width: 100%; height: 500px;">
+      </div>
 
-               <div class="row">
-            <div class="large-12 columns">
-                 <div class="section" id="ExtrusaoSimetrica">
-                    <h2>Com extrusão simêtrica (STL Files)</h2> 
-                    <hr>
-                  </div>
-                </div> 
-            </div>
-            
-              <div class="row">
-                   <div class="large-4 columns">
-                        <a href="./ExtrusaoSimetrica/Chaveiro 1 - Amazonas.stl" download>
-                            <img src="./ExtrusaoSimetrica/Gifs/Chaveiro1.gif" alt="chaveiro1">
-                            <p align="center">Chaveiro 1 - Amazonas</p>
-                        </a>
-                    </div>
-              </div>
-        </div>
-</div>
+      <!-- Modelo 2 -->
+      <div class="item">
+        <h2>Chaveiro 1.1 - Sem icones do texto</h2>
+        <img src="./Gifs/Chaveiro V1.2 - Haley.gif" alt="GIF Chaveiro 1.2" style="width: 100%; height: 500px;">
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Título do Chaveiro V2 -->
+    <section id="chaveiro-v2" class="section-title">
+      <h2>Chaveiro V2 - Foco em mais traços</h2>
+    </section>
+
+    <!-- Galeria de Modelos Chaveiro V2 -->
+    <section class="gallery">
+      <!-- Modelo 3 -->
+      <div class="item">
+        <h2>Chaveiro 2 - As rugas ganharam material (melhorando o traço)</h2>
+        <img src="./Gifs/Chaveiro V2 - Haley.gif" alt="GIF Chaveiro 2" style="width: 100%; height: 500px;">
+      </div>
+
+      <!-- Modelo 4 -->
+      <div class="item">
+        <h2>Chaveiro 2.2 - Sem icones do texto</h2>
+        <img src="./Gifs/Chaveiro V2.2 - Haley.gif" alt="GIF Chaveiro 2.2" style="width: 100%; height: 500px;">
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Título do Chaveiro V3 -->
+    <section id="chaveiro-v3" class="section-title">
+      <h2>Chaveiro V3 - Todos os traços ganharam materiais</h2>
+    </section>
+
+    <!-- Galeria de Modelos Chaveiro V3 -->
+    <section class="gallery">
+      <!-- Modelo 5 -->
+      <div class="item">
+        <h2>Chaveiro 3</h2>
+        <img src="./Gifs/Chaveiro V3 - Haley.gif" alt="GIF Chaveiro 3" style="width: 100%; height: 500px;">
+      </div>
+
+      <!-- Modelo 6 -->
+      <div class="item">
+        <h2>Chaveiro 3.2 - Sem icones do texto</h2>
+        <img src="./Gifs/Chaveiro V3.2 - Haley.gif" alt="GIF Chaveiro 3.2" style="width: 100%; height: 500px;">
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Título do Chaveiro V4 -->
+    <section id="chaveiro-v4" class="section-title">
+      <h2>Chaveiro V4 - Sem profundidade do fundo (BG-background) </h2>
+    </section>
+
+    <!-- Galeria de Modelos Chaveiro V4 -->
+    <section class="gallery">
+      <!-- Modelo 7 -->
+      <div class="item">
+        <h2>Chaveiro 4 - Igual ao chaveiro 1 porém sem BG</h2>
+        <img src="./Gifs/Chaveiro V4 - Haley.gif" alt="GIF Chaveiro 4" style="width: 100%; height: 500px;">
+      </div>
+
+      <!-- Modelo 8 -->
+      <div class="item">
+        <h2>Chaveiro 4.2 - Sem icones do texto</h2>
+        <img src="./Gifs/Chaveiro V4.2 - Haley.gif" alt="GIF Chaveiro 4.2" style="width: 100%; height: 500px;">
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Título do Chaveiro V5 -->
+    <section id="chaveiro-v5" class="section-title">
+      <h2>Chaveiro V5</h2>
+    </section>
+
+    <!-- Galeria de Modelos Chaveiro V5 -->
+    <section class="gallery">
+      <!-- Modelo 7 -->
+      <div class="item">
+        <h2>Chaveiro 5 - Igual ao chaveiro 2 porém sem BG</h2>
+        <img src="./Gifs/Chaveiro V5 - Haley.gif" alt="GIF Chaveiro 5" style="width: 100%; height: 500px;">
+      </div>
+
+      <!-- Modelo 8 -->
+      <div class="item">
+        <h2>Chaveiro 5.2 - Sem icones do texto</h2>
+        <img src="./Gifs/Chaveiro V5.2 - Haley.gif" alt="GIF Chaveiro 5.2" style="width: 100%; height: 500px;">
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Título do Chaveiro V6 -->
+    <section id="chaveiro-v6" class="section-title">
+      <h2>Chaveiro V6</h2>
+    </section>
+
+    <!-- Galeria de Modelos Chaveiro V4 -->
+    <section class="gallery">
+      <!-- Modelo 7 -->
+      <div class="item">
+        <h2>Chaveiro 6 - Igual ao chaveiro 3 porém sem BG</h2>
+        <img src="./Gifs/Chaveiro V6 - Haley.gif" alt="GIF Chaveiro 6" style="width: 100%; height: 500px;">
+      </div>
+
+      <!-- Modelo 8 -->
+      <div class="item">
+        <h2>Chaveiro 6.2 - Sem icones do texto</h2>
+        <img src="./Gifs/Chaveiro V6.2 - Haley.gif" alt="GIF Chaveiro 6.2" style="width: 100%; height: 500px;">
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Título do Chaveiro V7 -->
+    <section id="chaveiro-v7" class="section-title">
+      <h2>Chaveiro V7 - Expansão da camisa </h2>
+    </section>
+
+    <!-- Galeria de Modelos Chaveiro V7 -->
+    <section class="gallery">
+      <!-- Modelo 7 -->
+      <div class="item">
+        <h2>Chaveiro 7 - Mesmo esquema do chaveiro 1 porém com camisa expandida </h2>
+        <img src="./Gifs/Chaveiro V7 - Haley.gif" alt="GIF Chaveiro 7" style="width: 100%; height: 500px;">
+      </div>
+
+      <!-- Modelo 8 -->
+      <div class="item">
+        <h2>Chaveiro 7.2 - Sem icones do texto</h2>
+        <img src="./Gifs/Chaveiro V7.2 - Haley.gif" alt="GIF Chaveiro 7.2" style="width: 100%; height: 500px;">
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Título do Chaveiro V8 -->
+    <section id="chaveiro-v8" class="section-title">
+      <h2>Chaveiro V8</h2>
+    </section>
+
+    <!-- Galeria de Modelos Chaveiro V4 -->
+    <section class="gallery">
+      <!-- Modelo 7 -->
+      <div class="item">
+        <h2>Chaveiro 8 - Igual ao chaveiro 2 e com camisa expandida</h2>
+        <img src="./Gifs/Chaveiro V8 - Haley.gif" alt="GIF Chaveiro 8" style="width: 100%; height: 500px;">
+      </div>
+
+      <!-- Modelo 8 -->
+      <div class="item">
+        <h2>Chaveiro 8.2 - Sem icones do texto</h2>
+        <img src="./Gifs/Chaveiro V8.2 - Haley.gif" alt="GIF Chaveiro 8.2" style="width: 100%; height: 500px;">
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- Título do Chaveiro V9 -->
+    <section id="chaveiro-v9" class="section-title">
+      <h2>Chaveiro V9</h2>
+    </section>
+
+    <!-- Galeria de Modelos Chaveiro V9 -->
+    <section class="gallery">
+      <!-- Modelo 7 -->
+      <div class="item">
+        <h2>Chaveiro 9 - Igual ao chaveiro 3 e com camisa expandida</h2>
+        <img src="./Gifs/Chaveiro V9 - Haley.gif" alt="GIF Chaveiro 9" style="width: 100%; height: 500px;">
+      </div>
+
+      <!-- Modelo 8 -->
+      <div class="item">
+        <h2>Chaveiro 9.2 - Sem icones do texto</h2>
+        <img src="./Gifs/Chaveiro V9.2 - Haley.gif" alt="GIF Chaveiro 9.2" style="width: 100%; height: 500px;">
+      </div>
+    </section>
+
+    <hr>
+    <!-- Rodapé -->
+    <footer style="background-color: #333; color: white; text-align: center; padding: 10px; margin-top: 20px;">
+      <p>Desenvolvido por <a href="https://github.com/gustavoborges13" style="color: #ddd;" target="_blank">Gustavo Borges</a></p>
+    </footer>
+  </main>
 </body>
 </html>
